@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #e0f7ff, #004080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card {
+    margin: 22%;
+  width: 230px;
+  height: 230px;
+  background: radial-gradient(circle, #f0faff, transparent);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  
+
+}
+
+#clock {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#message {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+
+@keyframes pulse {
+  770% { box-shadow: 0 0 10px #00ff15; }
+  55% { box-shadow: 0 0 25px #ff0202; }
+  250% { box-shadow: 0 0 10px #9000ff; }
+}
+
+#card {
+  animation: pulse 1ms infinite;
+}

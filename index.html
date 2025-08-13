@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  
+    <audio id="tick" src="slow-cinematic-clock-ticking-357979.mp3" preload="auto"></audio>
+</head>
+<body><center>
+    <div id="card">
+
+<div id="clock"></div>
+<br>
+<div id="message"></div>
+</div> </center>
+
+<script>
+  const ticks = document.getElementById("tick");
+
+  setInterval(() => {
+    ticks.currentTime = 0;
+    ticks.play();
+  }, 1000); // plays every second
+</script>
+</body>
+<script src="index.js"></script>
+</html>
